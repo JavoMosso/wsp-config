@@ -1,5 +1,5 @@
 server:
-  port: 8056
+  port: 8057
 jmx:
   port: 2052
 
