@@ -13,9 +13,9 @@ eureka:
 spring:
   datasource:
     driver-class-name: com.ibm.db2.jcc.DB2Driver
-    url: jdbc:db2://xdtmm.gnp.mx:50000/DBAUTO
-    username: db2admin
-    password: admin123
+    url: jdbc:db2://10.67.4.78:50538/GNPDB078
+    username: iracine
+    password: Abril2017
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       maximum-pool-size: 3
@@ -23,7 +23,7 @@ spring:
     show-sql: true
     properties:
       hibernate.dialect: org.hibernate.dialect.DB2Dialect
-      hibernate.default_schema: DB2ADMIN
+      hibernate.default_schema: ESEONEG
 
 logging:
   pattern:
