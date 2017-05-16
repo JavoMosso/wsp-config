@@ -13,9 +13,9 @@ eureka:
 spring:
   datasource:
     driver-class-name: com.ibm.db2.jcc.DB2Driver
-    url: jdbc:db2://localhost:50000/DBAUTO
+    url: jdbc:db2://xdtmm.gnp.mx:50000/DBAUTO
     username: db2admin
-    password: qwerty
+    password: admin123
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       maximum-pool-size: 3
