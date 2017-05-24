@@ -4,7 +4,6 @@ server:
 wsp:
   url:
     urlTarificador: http://10.67.0.37/configuradorWeb/TarificadorDatosWebImplPort
-
   tarificadorDatos:
     TARIFICADOR_PRODUCTO:
       ID_NEGOCIO_OPERABLE: "NOP0000002"
