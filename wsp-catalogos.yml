@@ -1,7 +1,7 @@
-server:
-  port: 8055
-jmx:
-  port: 2052
+#server:
+#  port: 8055
+#jmx:
+#  port: 2052
 
 wsp:
   url:
