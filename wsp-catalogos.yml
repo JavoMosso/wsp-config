@@ -16,7 +16,7 @@ spring:
     driver-class-name: com.ibm.db2.jcc.DB2Driver
     url: jdbc:db2://10.67.4.78:50538/GNPDB078
     username: iracine
-    password: Abril2017
+    password: 2017Junio
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       maximum-pool-size: 3
