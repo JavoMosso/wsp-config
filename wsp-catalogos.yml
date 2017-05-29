@@ -3,7 +3,6 @@ server:
 jmx:
   port: 2052
 
-
 eureka:
   client:
     serviceUrl:
@@ -25,6 +24,11 @@ spring:
     properties:
       hibernate.dialect: org.hibernate.dialect.DB2Dialect
       hibernate.default_schema: ESEONEG
+      hibernate.cache.use_second_level_cache: true
+      hibernate.cache.use_query_cache: true
+      hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
+      javax:
+        persistence.sharedCache.mode: ENABLE_SELECTIVE
 
 logging:
   pattern:
@@ -33,3 +37,21 @@ logging:
     root: INFO
     com.netflix.discovery: "OFF"
     com.gnp.autos.configurador: INFO
+
+wsp:
+  high_trafic_start: "02:00:00"
+  high_trafic_stop: "05:00:00"
+
+---
+spring:
+  profiles: developfelipe
+  datasource:
+      driver-class-name: com.ibm.db2.jcc.DB2Driver
+      url: jdbc:db2://localhost:50000/gnpcat
+      username: felipe  
+      password: alsk  
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.dialect: org.hibernate.dialect.DB2Dialect
+      hibernate.default_schema: DB2ADMIN
