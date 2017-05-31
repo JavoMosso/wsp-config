@@ -1,0 +1,27 @@
+server:
+  port: 8060
+jmx:
+  port: 2052
+
+wsp:
+  url:
+    urlMUC: http://appserver/motorUnicoCalculoWeb/MotorUnicoCalculoWebImplPort
+  muc:
+    DATOS_COTIZACION:
+      DATOS_COTIZACION:
+        CODIGO_POSTAL_CONTRATANTE: ""
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8095/eureka
+  instance:
+    preferIpAddress: true
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd hh:mm:ss} %-5level [%thread] %logger : %msg%n"
+  level:
+    root: INFO
+    com.netflix.discovery: "OFF"
+    com.gnp.autos.configurador: INFO
