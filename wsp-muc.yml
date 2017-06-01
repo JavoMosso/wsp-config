@@ -6,10 +6,7 @@ jmx:
 wsp:
   url:
     urlMUC: http://appserver/motorUnicoCalculoWeb/MotorUnicoCalculoWebImplPort
-  muc:
-    DATOS_COTIZACION:
-      DATOS_COTIZACION:
-        CODIGO_POSTAL_CONTRATANTE: ""
+  
 
 eureka:
   client:
